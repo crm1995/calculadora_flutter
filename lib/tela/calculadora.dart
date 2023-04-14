@@ -11,11 +11,8 @@ class Calculadora extends StatefulWidget {
 }
 
 class _CalculadoraState extends State<Calculadora> {
-  //Instancia a memória no estado da calculadora
   final Memoria memoria = Memoria();
 
-  //Quando pressionar o botão ele passa o valor do botão para o estado
-  //que "seta" na memória
   _quandoPressionado(String comando) {
     setState(() {
       memoria.aplicarComando(comando);
@@ -24,9 +21,6 @@ class _CalculadoraState extends State<Calculadora> {
 
   @override
   Widget build(BuildContext context) {
-    //Mantem a visualização da calculadora estática, mesmo em outra orientação
-    SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
-
     return MaterialApp(
       home: Column(
         children: [

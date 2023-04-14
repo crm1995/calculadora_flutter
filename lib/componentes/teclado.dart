@@ -22,9 +22,6 @@ class Teclado extends StatelessWidget {
               Botao.operacao(texto: '/', valorBotao: valorBotao),
             ],
           ),
-
-          SizedBox(height: 1), //altura da linha que separa os botões
-
           LinhaBotoes(
             [
               //lista de botões (Texto, retorna valor do botão)
@@ -34,9 +31,6 @@ class Teclado extends StatelessWidget {
               Botao.operacao(texto: 'x', valorBotao: valorBotao),
             ],
           ),
-
-          SizedBox(height: 1), //altura da linha que separa os botões
-
           LinhaBotoes(
             [
               //lista de botões (Texto, retorna valor do botão)
@@ -46,9 +40,6 @@ class Teclado extends StatelessWidget {
               Botao.operacao(texto: '-', valorBotao: valorBotao),
             ],
           ),
-
-          SizedBox(height: 1), //altura da linha que separa os botões
-
           LinhaBotoes(
             [
               //lista de botões (Texto, retorna valor do botão)
@@ -58,9 +49,6 @@ class Teclado extends StatelessWidget {
               Botao.operacao(texto: '+', valorBotao: valorBotao),
             ],
           ),
-
-          SizedBox(height: 1), //altura da linha que separa os botões
-
           LinhaBotoes(
             [
               //lista de botões (Texto, retorna valor do botão)

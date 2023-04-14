@@ -17,7 +17,7 @@ class Botao extends StatelessWidget {
   Botao({
     required this.texto,
     this.grande = false,
-    this.cor = DEFAULT, //padrão (cinza claro)
+    this.cor = DEFAULT,
     required this.valorBotao,
   });
 
@@ -25,7 +25,7 @@ class Botao extends StatelessWidget {
   Botao.grande({
     required this.texto,
     this.grande = true,
-    this.cor = DEFAULT, //cor cinza claro
+    this.cor = DEFAULT,
     required this.valorBotao,
   });
 
@@ -33,7 +33,7 @@ class Botao extends StatelessWidget {
   Botao.operacao({
     required this.texto,
     this.grande = false,
-    this.cor = OPERACAO, //cor laranja
+    this.cor = OPERACAO,
     required this.valorBotao,
   });
 
@@ -41,7 +41,7 @@ class Botao extends StatelessWidget {
   Botao.escuro({
     required this.texto,
     this.grande = false,
-    this.cor = DARK, //cor cinza escuro
+    this.cor = DARK,
     required this.valorBotao,
   });
 
@@ -52,13 +52,13 @@ class Botao extends StatelessWidget {
       flex: grande ? 2 : 1, //se for duplo flex 2, senão flex 1
       child: ElevatedButton(
         style: ElevatedButton.styleFrom(
-          backgroundColor: this.cor, //cor dos botões (padrão)
+          backgroundColor: this.cor,
         ),
         child: Text(
           texto,
           style: TextStyle(
-            color: Colors.white, //cor do texto dentro do botão
-            fontSize: 32, //tamanho da fonte
+            color: Colors.white,
+            fontSize: 32,
             fontWeight: FontWeight.w200, //peso da fonte
           ),
         ),
